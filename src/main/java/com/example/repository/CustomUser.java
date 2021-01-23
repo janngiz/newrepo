@@ -5,8 +5,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 @Entity
+@Table
 public class CustomUser {
 
 	@Id
@@ -19,8 +21,8 @@ public class CustomUser {
 	private String email;
 	private String password;
 
-	@ManyToOne
-	private Roles roles;
+//	@ManyToOne
+//	private Roles roles;
 
 	public long getId() {
 		return id;
@@ -62,12 +64,12 @@ public class CustomUser {
 		this.password = password;
 	}
 
-	public Roles getRoles() {
-		return roles;
-	}
-
-	public void setRoles(Roles roles) {
-		this.roles = roles;
-	}
+//	public Roles getRoles() {
+//		return roles;
+//	}
+//
+//	public void setRoles(Roles roles) {
+//		this.roles = roles;
+//	}
 
 }

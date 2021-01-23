@@ -11,8 +11,8 @@ public class Roles {
 	private long id;
 	private String name;
 
-	@OneToMany(mappedBy = "roles")
-	private List<CustomUser> users;
+//	@OneToMany(mappedBy = "roles")
+//	private List<CustomUser> users;
 
 	public long getId() {
 		return id;
@@ -30,12 +30,12 @@ public class Roles {
 		this.name = name;
 	}
 
-	public List<CustomUser> getUsers() {
-		return users;
-	}
-
-	public void setUsers(List<CustomUser> users) {
-		this.users = users;
-	}
+//	public List<CustomUser> getUsers() {
+//		return users;
+//	}
+//
+//	public void setUsers(List<CustomUser> users) {
+//		this.users = users;
+//	}
 
 }
